@@ -1,0 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset end */
+
+.wrap{
+    margin: 0 auto;
+    width: 1024px;
+    position: relative;
+}
+
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.header{
+    background: #424242;
+}
+
+.header .logo{
+    float: left;
+    padding-left: 173px;
+    padding-top: 92px;
+    padding-bottom: 91px;
+}
+
+.header form{
+    float: left;
+    display: block;
+    padding-top: 65px;
+    padding-left: 97px;
+}
+
+.header form label{
+    display: block;
+    font-size: 18px;
+    color: #FFD366;
+}
+
+.header form input{
+    box-sizing: border-box;
+    width: 250px;
+    height: 40px;
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    font-size: 24px;
+    background: rgb(133, 131, 131);
+    color: #fff;
+    padding-left: 16px;
+    margin-top: 7px;
+    margin-bottom: 23px;
+}
+
+.header form input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header .getResult{
+    box-sizing: border-box;
+    float: right;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #424242;
+    background: #FFD366;
+    width: 120px;
+    height: 120px;
+    padding-top: 48px;
+    border-radius: 60px;
+    margin-right: 214px;
+    margin-top: 92px;
+}
+
+.header .result{
+    position: relative;
+    display: none;
+    box-sizing: border-box;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 15px;
+    font-weight: bold;
+    color: #86D73F;
+    border: 7px solid #86D73F;
+    width: 120px;
+    height: 120px;
+    padding-top: 48px;
+    border-radius: 60px;
+    margin-right: 214px;
+    margin-top: 92px;
+}
+
+.header .result p{
+    position: relative;
+    bottom: 10px;
+}
+.header .result span{
+    font-size: 14px;
+}
+
+.header .result .renew{
+    position: relative;
+    display: block;
+    background: #86D73F;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    left: 85px;
+    bottom: 20px;   
+}
+
+.header .result .situation{
+    width: 150px;
+    bottom: 70px;
+    left: 105px;
+}
+
+.content{
+    text-align: center;
+    background: #eaedf0;
+}
+
+.content h2{
+    font-size: 24px;
+    color: #424242;
+    padding-top: 48px;
+}
+
+.content .deleteAll{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    position: relative;
+    left: 280px;
+    top: 20px;
+}
+
+.content .deleteAll:hover{
+    text-decoration: underline;
+}
+
+.content .list{
+    padding-top: 20px;
+    padding-bottom: 74px;
+}
+
+.content .list>li{
+    display: block;
+    width: 624px;
+    height: 62px;
+    background: #fff;
+    margin-left: 200px;
+    margin-top: 16px;
+}
+
+.content .list .listContent li{
+    float: left;
+    color: #4A4A4A;
+    line-height: 62px;
+}
+
+
+
+.content .list .listContent .situation{
+    font-size: 20px;
+    width: 100px;
+    box-sizing: border-box;
+    padding-left: 12px;
+} 
+
+.content .list .listContent .unit{
+    margin-left: 42px;
+    font-size: 12px;
+}
+
+.content .list .listContent i{
+    font-size: 20px;
+    padding-left: 7px;
+}
+
+.content .list .date{
+    padding-left: 52px;
+}
+
+.list .delete{
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;   
+    color: red;
+    padding: 0 5px;
+    left: 20px;
+}
+
+.list .delete:hover{
+    font-weight: bold;
+}
+
+.footer{
+    background: #FFD366;
+    text-align: center;
+}
+
+.footer img{
+    width: 55px;
+    height: 55px;
+    padding: 18px 0;
+}

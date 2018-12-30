@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>高雄旅遊資訊</title>
+
+    <link rel="stylesheet" href="css/travel.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1>高雄旅遊資訊</h1>
+
+            <form action="travel.html">
+                <select name="area" class="area">
+                    <option value="" disabled selected>--請選擇行政區</option>
+                </select>
+            </form>
+
+            <div class="hotArea">
+                <h3>熱門行政區</h3>
+                <a href="#" value="苓雅區" style="background: #8A82CC">苓雅區</a>
+                <a href="#" value="三民區" style="background: #FFA782">三民區</a>
+                <a href="#" value="新興區" style="background: #F5D005">新興區</a>
+                <a href="#" value="鹽埕區" style="background: #559AC8">鼓山區</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h3><img src="img/icons_down.png" alt="down"></h3>
+            
+            <h2></h2>
+            <ul class="card clearfix">
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>高雄旅遊網</p>
+            <p class="source">資烙來源：高雄市政府</p>
+        </div>
+
+        <a href="#" class="top"><img src="img/btn_goTop.png" alt=""></a>
+    </div>    
+
+    <script src="js/travel.js"></script>
+</body>
+</html>

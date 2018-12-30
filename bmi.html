@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bmi.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header clearfix">
+            <h1 class="logo"><img src="img/BMICLogo.png" alt="BMI"></h1>
+
+            <form action="#">
+                <label for="cm">身高 cm</label>
+                <input type="text" id="cm" placeholder="請輸入身高">
+                <label for="kg">體重 kg</label>
+                <input type="text" id="kg" placeholder="請輸入體重">
+            </form>
+            <a href="#" class="getResult">看結果</a>
+            <div class="result">                
+                <p class="bmiIndex">20.90<span><br>BMI</span></p>             
+                <a href="#" class="renew"><img src="img/icons_loop.png" alt="loop"></a>
+                <p class="situation"></p>
+            </div>         
+        </div>
+
+        <div class="content">
+            <h2>BMI 紀錄</h2> 
+            
+            <a href="#" class="deleteAll"></a>
+            
+            <ul class="list">
+                <li data-num="0" class="good" style="border-left: 7px solid #86D73F;">
+                    <ul class="listContent clearfix">
+                        <li class="situation">理想</li>
+                        <li class="unit">BMI <i>20.90</i></li>
+                        <li class="unit">weight <i>70kg</i></li>
+                        <li class="unit">height <i>180cm</i></li>
+                        <li class="date">06-19-2017</li>
+                        <a href="#" class="delete">x</a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <img src="img/BMILogo.png" alt="BMI">
+        </div>
+    </div>
+
+    <script src="js/bmi.js"></script>
+</body>
+</html>
